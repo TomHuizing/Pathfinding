@@ -4,7 +4,7 @@ namespace Pathfinding;
 
 internal class PathfindingService : IPathfindingService
 {
-    public bool TryFindPath(INode start, INode target, IGraph graph, out INode[] path)
+    public bool TryFindPath(INode start, INode target, IGraph graph, ICostService costService, out INode[] path)
     {
         if(start == target)
         {
@@ -19,7 +19,7 @@ internal class PathfindingService : IPathfindingService
         List<INode> openSet = [start];
         Dictionary<INode, INode> cameFrom = [];
 
-        if(!graph.HeuristicService.TryGetHeuristic(start, target, out double startHeuristic))
+        if(!costService.TryGetHeuristic(start, target, out double startHeuristic))
         {
             path = [];
             return false;
@@ -47,7 +47,7 @@ internal class PathfindingService : IPathfindingService
             {
                 INode neighbor = edge.To;
 
-                if(!graph.TraversalCostService.TryGetTraversalCost(edge, out double cost) || !graph.HeuristicService.TryGetHeuristic(neighbor, target, out double heuristic))
+                if(!costService.TryGetTraversalCost(edge, out double cost) || !costService.TryGetHeuristic(neighbor, target, out double heuristic))
                     continue;
                 
                 double tentativeGScore = gScore[current] + cost;

@@ -2,7 +2,8 @@ using System;
 
 namespace Pathfinding;
 
-public interface IHeuristicService
+public interface ICostService
 {
     bool TryGetHeuristic(INode start, INode target, out double heuristic);
+    bool TryGetTraversalCost(IEdge edge, out double cost);
 }
