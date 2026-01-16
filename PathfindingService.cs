@@ -4,11 +4,11 @@ namespace Pathfinding;
 
 internal class PathfindingService : IPathfindingService
 {
-    public bool TryFindPath(INode start, INode target, IGraph graph, ICostService costService, out INode[] path)
+    public bool TryFindPath(INode start, INode target, IGraph graph, ICostService costService, out IEdge[] path)
     {
         if(start == target)
         {
-            path = [start];
+            path = [];
             return true;
         }
         if(!graph.Edges.Any(edge => edge.From == start) || !graph.Edges.Any(edge => edge.To == target))
@@ -17,7 +17,8 @@ internal class PathfindingService : IPathfindingService
             return false;
         }
         List<INode> openSet = [start];
-        Dictionary<INode, INode> cameFrom = [];
+        // Dictionary<INode, IEdge> cameFrom = [];
+        List<IEdge> cameFrom = [];
 
         if(!costService.TryGetHeuristic(start, target, out double startHeuristic))
         {
@@ -54,7 +55,8 @@ internal class PathfindingService : IPathfindingService
                 if (gScore.ContainsKey(neighbor) && tentativeGScore >= gScore[neighbor])
                     continue;
 
-                cameFrom[neighbor] = current;
+                cameFrom.RemoveAll(e => e.To == neighbor);
+                cameFrom.Add(edge);
                 gScore[neighbor] = tentativeGScore;
                 fScore[neighbor] = tentativeGScore + heuristic;
                 
@@ -67,13 +69,23 @@ internal class PathfindingService : IPathfindingService
         return false;
     }
 
-    private INode[] ReconstructPath(Dictionary<INode, INode> cameFrom, INode current)
+    private IEdge[] ReconstructPath(IEnumerable<IEdge> cameFrom, INode current)
     {
-        List<INode> path = [current];
-        while (cameFrom.ContainsKey(current))
+        // List<IEdge> path = [cameFrom[current]];
+        // while (cameFrom.ContainsKey(current))
+        // {
+        //     current = cameFrom[current].From;
+        //     path.Insert(0, cameFrom[current]);
+        // }
+        List<IEdge> path = [];
+        INode node = current;
+        while (true)
         {
-            current = cameFrom[current];
-            path.Insert(0, current);
+            IEdge? edge = cameFrom.FirstOrDefault(e => e.To == node);
+            if (edge == null)
+                break;
+            path.Insert(0, edge);
+            node = edge.From;
         }
         return path.ToArray();
     }
