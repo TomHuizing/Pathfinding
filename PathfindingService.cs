@@ -4,6 +4,20 @@ namespace Pathfinding;
 
 internal class PathfindingService : IPathfindingService
 {
+    public bool IsValidPath(IEdge[] path, ICostService costService)
+    {
+        if(path.Length == 0)
+            return true;
+        for(int i = 0; i < path.Length; i++)
+        {
+            if(i < path.Length - 1 && path[i].To != path[i+1].From)
+                return false;
+            if(!costService.TryGetTraversalCost(path[i], out double _))
+                return false;
+        }
+        return true;
+    }
+
     public bool TryFindPath(INode start, INode target, IGraph graph, ICostService costService, out IEdge[] path)
     {
         if(start == target)
@@ -17,7 +31,6 @@ internal class PathfindingService : IPathfindingService
             return false;
         }
         List<INode> openSet = [start];
-        // Dictionary<INode, IEdge> cameFrom = [];
         List<IEdge> cameFrom = [];
 
         if(!costService.TryGetHeuristic(start, target, out double startHeuristic))
@@ -26,16 +39,13 @@ internal class PathfindingService : IPathfindingService
             return false;
         }
 
-        // gScore[n] is the cost of the cheapest path from start to n currently known
         Dictionary<INode, double> gScore = [];
-        // fScore[n] = gScore[n] + h(n) where h is the heuristic
         Dictionary<INode, double> fScore = [];
         fScore.Add(start, startHeuristic);
         gScore.Add(start, 0);
 
         while (openSet.Count > 0)
         {
-            // Find node with lowest f-score
             INode current = openSet.OrderBy(n => fScore[n]).First();
             openSet.Remove(current);
             
@@ -71,12 +81,6 @@ internal class PathfindingService : IPathfindingService
 
     private IEdge[] ReconstructPath(IEnumerable<IEdge> cameFrom, INode current)
     {
-        // List<IEdge> path = [cameFrom[current]];
-        // while (cameFrom.ContainsKey(current))
-        // {
-        //     current = cameFrom[current].From;
-        //     path.Insert(0, cameFrom[current]);
-        // }
         List<IEdge> path = [];
         INode node = current;
         while (true)
