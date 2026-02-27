@@ -1,8 +1,3 @@
-using System;
+namespace TomHuizing.Pathfinding;
 
-namespace Pathfinding;
-
-public interface INode
-{
-    
-}
+public interface INode;

@@ -1,6 +1,4 @@
-using System;
-
-namespace Pathfinding;
+namespace TomHuizing.Pathfinding;
 
 public interface IPathfindingService
 {

@@ -1,0 +1,23 @@
+name: Publish NuGet Package
+
+on:
+    push:
+        tags:
+            - 'v*.*.*'  # Trigger on version tags like v1.0.0
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-dotnet@v5
+              with:
+                dotnet-version: '8.0.x'  # Use the latest .NET 8 SDK
+                source-url: "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json"
+              env:
+                NUGET_AUTH_TOKEN: ${{secrets.PAT}}
+                  
+            - run: dotnet restore
+            - run: dotnet pack -c Release
+            - run: dotnet nuget push ./bin/Release/*.nupkg --source "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json" --api-key ${{ secrets.PAT }}

@@ -1,6 +1,4 @@
-using System;
-
-namespace Pathfinding;
+namespace TomHuizing.Pathfinding;
 
 public class Edge(INode from, INode to) : IEdge
 {

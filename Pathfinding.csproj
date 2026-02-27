@@ -5,6 +5,16 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>TomHuizing.Pathfinding</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Tom Huizing</Authors>
+    <Company>Cormorant Studios</Company>
+    <Description>A library for pathfinding in C#.</Description>
+    <RepositoryUrl>https://github.com/TomHuizing/Pathfinding</RepositoryUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequiredLicenseAcceptance>false</PackageRequiredLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

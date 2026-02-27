@@ -1,7 +1,6 @@
-using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Pathfinding;
+namespace TomHuizing.Pathfinding;
 
 public static class DIExtensions
 {
