@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A json addon for a library for pathfinding in C#.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+0825820591f120f9ef58a54ab1719d158e925df8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+986826948ee1f362e549596cd1b4c049fcff178a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pathfinding.Json")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pathfinding.Json")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]
