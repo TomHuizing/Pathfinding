@@ -11,10 +11,10 @@
     "/home/maring/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.1.0",
     "restore": {
       "projectUniqueName": "/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/Pathfinding.Json.csproj",
-      "projectName": "Pathfinding.Json",
+      "projectName": "TomHuizing.Pathfinding.Json",
       "projectPath": "/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/Pathfinding.Json.csproj",
       "packagesPath": "/home/maring/.nuget/packages/",
       "outputPath": "/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/",
