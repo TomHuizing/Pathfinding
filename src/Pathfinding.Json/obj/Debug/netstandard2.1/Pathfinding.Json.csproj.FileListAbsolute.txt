@@ -1,0 +1,10 @@
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/bin/Debug/netstandard2.1/Pathfinding.Json.deps.json
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/bin/Debug/netstandard2.1/Pathfinding.Json.dll
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/bin/Debug/netstandard2.1/Pathfinding.Json.pdb
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.GeneratedMSBuildEditorConfig.editorconfig
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.AssemblyInfoInputs.cache
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.AssemblyInfo.cs
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.csproj.CoreCompileInputs.cache
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.sourcelink.json
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.dll
+/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/obj/Debug/netstandard2.1/Pathfinding.Json.pdb

@@ -1,0 +1,12 @@
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/bin/Debug/net10.0/Pathfinding.Tests.deps.json
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/bin/Debug/net10.0/Pathfinding.Tests.dll
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/bin/Debug/net10.0/Pathfinding.Tests.pdb
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.AssemblyInfoInputs.cache
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.AssemblyInfo.cs
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.csproj.CoreCompileInputs.cache
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.sourcelink.json
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.dll
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/refint/Pathfinding.Tests.dll
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/Pathfinding.Tests.pdb
+/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/obj/Debug/net10.0/ref/Pathfinding.Tests.dll
