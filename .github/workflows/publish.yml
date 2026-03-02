@@ -25,8 +25,6 @@ jobs:
         run: dotnet test tests/Pathfinding.Tests -c Release --no-build
       - name: Pack Pathfinding
         run: dotnet pack src/Pathfinding -c Release -o ./artifacts
-      - name: Pack Pathfinding.Json
-        run: dotnet pack src/Pathfinding.Json -c Release -o ./artifacts
       - name: Publish Packages
         run: |
           for package in ./artifacts/*.nupkg; do
