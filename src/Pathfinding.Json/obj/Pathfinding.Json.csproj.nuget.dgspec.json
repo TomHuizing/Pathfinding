@@ -5,7 +5,7 @@
   },
   "projects": {
     "/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/Pathfinding.Json.csproj": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "restore": {
         "projectUniqueName": "/home/maring/dev/lib/Pathfinding/src/Pathfinding.Json/Pathfinding.Json.csproj",
         "projectName": "TomHuizing.Pathfinding.Json",

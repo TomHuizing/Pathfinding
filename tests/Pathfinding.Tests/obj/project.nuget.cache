@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ypxCwn3R8YU=",
+  "dgSpecHash": "q26ScWYpcWE=",
   "success": true,
   "projectFilePath": "/home/maring/dev/lib/Pathfinding/tests/Pathfinding.Tests/Pathfinding.Tests.csproj",
   "expectedPackageFiles": [
@@ -24,8 +24,7 @@
     "/home/maring/.nuget/packages/mstest.analyzers/3.8.3/mstest.analyzers.3.8.3.nupkg.sha512",
     "/home/maring/.nuget/packages/mstest.testadapter/3.8.3/mstest.testadapter.3.8.3.nupkg.sha512",
     "/home/maring/.nuget/packages/mstest.testframework/3.8.3/mstest.testframework.3.8.3.nupkg.sha512",
-    "/home/maring/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
-    "/home/maring/.nuget/packages/tomhuizing.pathfinding/0.1.0/tomhuizing.pathfinding.0.1.0.nupkg.sha512"
+    "/home/maring/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

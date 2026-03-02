@@ -1050,7 +1050,7 @@
           }
         }
       },
-      "TomHuizing.Pathfinding/0.1.0": {
+      "TomHuizing.Pathfinding/0.1.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -2478,7 +2478,7 @@
         "packageIcon.png"
       ]
     },
-    "TomHuizing.Pathfinding/0.1.0": {
+    "TomHuizing.Pathfinding/0.1.1": {
       "type": "project",
       "path": "../../src/Pathfinding/Pathfinding.csproj",
       "msbuildProject": "../../src/Pathfinding/Pathfinding.csproj"
@@ -2487,7 +2487,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "MSTest >= 3.8.3",
-      "TomHuizing.Pathfinding >= 0.1.0"
+      "TomHuizing.Pathfinding >= 0.1.1"
     ]
   },
   "packageFolders": {

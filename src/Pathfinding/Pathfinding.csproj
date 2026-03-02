@@ -7,11 +7,13 @@
     <Nullable>enable</Nullable>
 
     <PackageId>TomHuizing.Pathfinding</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Tom Huizing</Authors>
     <Company>Cormorant Studios</Company>
     <Description>A library for pathfinding in C#.</Description>
     <RepositoryUrl>https://github.com/TomHuizing/Pathfinding</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequiredLicenseAcceptance>false</PackageRequiredLicenseAcceptance>
